@@ -1,0 +1,35 @@
+// Generate a random number to be guessed
+
+package exercise;
+import java.util.*;
+class exercise4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int number = (int)(Math.random() * 11);
+		Scanner sc = new Scanner (System.in);
+		int j , i = -1;
+		
+		System.out.println("This is a Number System");
+		
+		
+		while(i != number) {
+			System.out.println("Enter number from 1- 10");
+			j = sc.nextInt();
+			
+			if (j == number) {
+				System.out.println("Congratulations! your number is correct");
+			}else if (j<= number) {
+				System.out.println("Sorry your number is too low");
+			} else if(j>= number) {
+				System.out.println("Sorry your number is too high");
+				
+				
+				//cashier, account bank, hp, website, vending machine, tol
+			}
+			
+		}
+	}
+
+}
